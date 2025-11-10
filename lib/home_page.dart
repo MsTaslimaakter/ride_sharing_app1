@@ -345,7 +345,7 @@ class _GridProductCard extends StatelessWidget {
             const SizedBox(width: 4),
             Text(product.oldPrice, style: GoogleFonts.inter(decoration: TextDecoration.lineThrough, color: Colors.grey, fontSize: 12)),
             const SizedBox(width: 4),
-            Text(product.discount, style: GoogleFonts.inter(color: Colors.red.shade700, fontSize: 12, fontWeight: FontWeight.w500)),
+            Text(product.discount, style: GoogleFonts.inter(color: Colors.purple.shade700, fontSize: 12, fontWeight: FontWeight.w500)),
           ],
         ),
         const SizedBox(height: 4),
@@ -445,10 +445,10 @@ class _EventCard extends StatelessWidget {
                       }).toList(),
                       if (event.additionalUsers > 0)
                         Container(
-                          margin: const EdgeInsets.only(left: 4),
-                          padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                          margin: const EdgeInsets.only(left: 1),
+                          padding: const EdgeInsets.symmetric(horizontal: 2, vertical: 2),
                           decoration: BoxDecoration(
-                            color: const Color(0xFF5C6BC0).withOpacity(0.9),
+                            color: const Color(0xFF584CF4).withOpacity(0.9),
                             borderRadius: BorderRadius.circular(11),
                           ),
                           child: Text(
@@ -464,7 +464,7 @@ class _EventCard extends StatelessWidget {
           ),
 
           const SizedBox(height: 8),
-          Text(event.title, style: GoogleFonts.inter(color: const Color(0xFF222222), fontSize: 14, fontWeight: FontWeight.w500)),
+          Center(child: Text(event.title, style: GoogleFonts.inter(color: const Color(0xFF666666), fontSize: 14, ))),
         ],
       ),
     );
@@ -612,7 +612,7 @@ class _CareRecommendationCard extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 8),
-          Text(name, style: GoogleFonts.inter(fontSize: 12), textAlign: TextAlign.center),
+          Text(name, style: GoogleFonts.inter(color: const Color(0xFF666666), fontSize: 12), textAlign: TextAlign.center),
         ],
       ),
     );
@@ -655,7 +655,7 @@ class _ServicePackageCard extends StatelessWidget {
             const SizedBox(width: 8),
             Text(oldPrice, style: GoogleFonts.inter(decoration: TextDecoration.lineThrough, color: Colors.grey, fontSize: 12)),
             const SizedBox(width: 8),
-            Text(discount, style: GoogleFonts.inter(color: Colors.red.shade700, fontSize: 12, fontWeight: FontWeight.w500)),
+            Text(discount, style: GoogleFonts.inter(color: Colors.purple.shade700, fontSize: 12, fontWeight: FontWeight.w500)),
           ],
         ),
       ],
